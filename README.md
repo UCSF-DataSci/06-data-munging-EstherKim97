@@ -176,7 +176,6 @@
 | gender |  category  | 94759  |  3  |  -  |
 | year  |  integer  |  94759  |  169 |  2025  |
 | population  | integer  | 94759  |  93490   |  21894323  |
-|-------------|-----------|----------------|---------------|--------|
 
 ### Summary of Changes
 - Major changes made to the dataset:
