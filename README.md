@@ -184,5 +184,5 @@
     - Removed duplicates: 2950 duplicates were dropped to maintain only unique data for analysis.
     - Removed outliers: Outliers identified using IQR and z-score were removed.
     - Recategorized data: Income groups column was recategorized into main categories and gender was relabeled using descriptive names for clarity.
-- [Discuss any significant changes in data distribution]
+- Discussion:
     One of the significant changes is that the raw data contained 125718 rows of data, but has dropped to 94759 rows after data cleaning. The dataset has become smaller, but contains more consistent and accurate data without missing values, duplicates and outliers. Also, the removal of outliers and duplicates resulted in slight adjustments in mean and standard deviation of the data, especilly population. Also, after recategorizing and renaiming the columns into main groups and descriptive names, the dataset has higher clarity and is easy to interprete for analysis.
