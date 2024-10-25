@@ -8,14 +8,14 @@
 - **Columns**: 5 columns
 
 ### Column Details
+
 | Column Name | Data Type | Non-Null Count | Unique Values |  Mean  |
 |-------------|-----------|----------------|---------------|--------|
-| [income_groups]  | [object]    | [119412]  | [8]    | [Mean] |
-| [age]  | [float]  |  [119495]  |  [101] |  [50.01]  |
-| [gender] |  [float]  | [119811]  |  [3]  |  [1.58]  |
-| [year]  |  [float]  |  [119516]  |  [169]  |  [2025.07]  |
-| [population]  | [float]  | [119378]  |  [114925]   |  [1.11e+08]  |
-|-------------|-----------|----------------|---------------|--------|
+| income_groups  | object    | 119412  | 8    | Mean |
+| age  | float  |  119495  |  101 |  50.01  |
+| gender |  float  | 119811  |  3  |  1.58  |
+| year  |  float  |  119516  |  169  |  2025.07  |
+| population  | float  | 119378  |  114925   |  1.11e+08  |
 
 ### Identified Issues
 
@@ -65,23 +65,23 @@
 
   |  Columns  |  Number of NA  |
   |-----------|----------------|
-  | [income_groups] |   6306  |
-  | [age]  |  6223  |
-  | [gender] |  5907  |
-  | [year] |  6202  |
-  | [population] |  6340  |
-  |--------------|------------|
+  | income_groups |   6306  |
+  | age  |  6223  |
+  | gender |  5907  |
+  | year |  6202  |
+  | population |  6340  |
+ 
 
   - Data distribution change: After removing missing data, there was not a big change in the data distribution except for a slight different in mean age.
 
   | Column Name | Data Type | Non-Null Count | Unique Values |  Mean  |
-|-------------|-----------|----------------|---------------|--------|
-| [income_groups]  | [object]    | [97639]  | [8]    | [-] |
-| [age]  | [float]  |  [97639]  |  [101] |  [50.04]  |
-| [gender] |  [float]  | [97639]  |  [3]  |  [1.58]  |
-| [year]  |  [float]  |  [97639]  |  [169]  |  [2025.12]  |
-| [population]  | [float]  | [97639]  |  [94156]   |  [1.11e+08]  |
-|-------------|-----------|----------------|---------------|--------|
+  |-------------|-----------|----------------|---------------|--------|
+  | income_groups  | object    | 97639  | 8    | - |
+  | age  | float  |  97639  |  101 |  50.04  |
+  | gender |  float  | 97639  |  3  |  1.58  |
+  | year  |  float  |  97639  |  169  |  2025.12  |
+  | population  | float  | 97639  |  94156  |  1.11e+08   |
+
 
 ### Issue 2: [Invalid Data Type]
 - **Cleaning Method**: Using .astype() function, each columns were changed to appropriate data types.
@@ -102,14 +102,13 @@
 - **Impact**: 
   - Rows affected: All rows and columns are affected.
 
-    | Column Name | Data Type | Non-Null Count | Unique Values |  Mean  |
-|-------------|-----------|----------------|---------------|--------|
-| [income_groups]  | [category]    | [97639]  | [8]    | [-] |
-| [age]  | [integer]  |  [97639]  |  [101] |  [50.04]  |
-| [gender] |  [category]  | [97639]  |  [3]  |  [-]  |
-| [year]  |  [integer]  |  [97639]  |  [169]  |  [2025.12]  |
-| [population]  | [integer]  | [97639]  |  [94156]   |  [1.11e+08]  |
-|-------------|-----------|----------------|---------------|--------|
+  | Column Name | Data Type | Non-Null Count | Unique Values |  Mean  |
+  |-------------|-----------|----------------|---------------|--------|
+  | income_groups  | category    | 97639 | 8    | - |
+  | age  | integer  |  97639  |  101 |  50.04  |
+  | gender |  category  | 97639  |  3  |  -  |
+  | year  |  integer  |  97639  |  169  |  2025.12  |
+  | population  | integer  | 97639  |  94156   |  1.11e+08  |
 
   - Data distribution change: Income groups and gender does not have mean or standard deviation values anymore. Data can be appropriately distinguished based on gender and income groups.
 
@@ -172,11 +171,11 @@
 
 | Column Name | Data Type | Non-Null Count | Unique Values |  Mean  |
 |-------------|-----------|----------------|---------------|--------|
-| [income_groups]  | [category]    | [94759]  | [4]    | [-] |
-| [age]  | [integer]  |  [94759]  |  [101] |  [101]  |
-| [gender] |  [category]  | [94759]  |  [3]  |  [-]  |
-| [year]  |  [integer]  |  [94759]  |  [169]  |  [2025]  |
-| [population]  | [integer]  | [94759]  |  [93490]   |  [21894323]  |
+| income_groups  | category    | 94759  | 4   | -|
+| age  | integer  |  94759  |  101 |  101  |
+| gender |  category  | 94759  |  3  |  -  |
+| year  |  integer  |  94759  |  169 |  2025  |
+| population  | integer  | 94759  |  93490   |  21894323  |
 |-------------|-----------|----------------|---------------|--------|
 
 ### Summary of Changes
