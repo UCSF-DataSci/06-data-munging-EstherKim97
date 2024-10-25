@@ -1,4 +1,4 @@
-# Data Cleaning Project: Population Dataset
+# Data Cleaning Project: Assignment 6
 
 ## 1. Initial State Analysis
 
